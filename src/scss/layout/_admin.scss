@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-admin-app {
+    background-color: v.$azulOscuro;
+    padding-bottom: 7rem;
+
+    fieldset {
+        border: solid 1px v.$negro;
+        background-color: v.$negroTransparente;
+        border-radius: 5rem;
+    }
+
+    legend {
+        color: v.$negro;
+        font-weight: v.$bold;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: v.$blanco;
+        border-radius: 5rem;
+    }
+
+    .admin-app {
+        width: 80%;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+
+    .acciones-admin{
+        display: flex;
+        justify-content: space-between;
+        background-color: v.$negroTransparente;
+        padding: 3rem;
+        font-weight: v.$bold;
+        border-radius: 5rem;
+        a{
+            color: v.$blanco;
+        }
+    }
+
+    .boton-admin {
+        flex: 1;
+        border: none;
+        padding: calc(v.$separacion / 4);
+        border-radius: 5rem;
+    
+        &:disabled {
+            background-color: lighten(v.$negro, 30%);
+            color: v.$blanco;
+            cursor: not-allowed;
+        }
+    }
+
+    .logout{
+        a{
+            color: v.$blanco;
+        }
+        font-weight: v.$bold;
+        margin-top: 5rem;
+    }
+
+    .info-contratista{
+        display: flex;
+        justify-content: space-between;
+        background-color: v.$azul;
+        padding: 1rem;
+    }
+
+    .titulo-info{
+        margin-top: 5rem;
+    }
+
+    .datos-contratista{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            color: v.$negro;
+        }
+        background-color: v.$blanco;
+        padding: 1rem;
+        margin: 0;
+    }
+}
+
+

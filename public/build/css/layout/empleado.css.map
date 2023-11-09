@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/empleado.scss","layout/empleado.css"],"names":[],"mappings":"AAAA,iBACI,kCCCJ","file":"empleado.css","sourcesContent":[".imagen-empleado{\r\n    background-image: url('../img/3.png');\r\n  \r\n}",".imagen-empleado {\n  background-image: url(\"../img/3.png\");\n}"]}

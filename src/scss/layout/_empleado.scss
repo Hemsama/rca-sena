@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-empleado-app {
+    background-color: v.$azulOscuro;
+    
+    @include m.tablet {
+        display: grid;
+        min-height: 100vh;
+    }
+
+    .empleado-app {
+        width: 50%;
+        margin: 2rem auto 2rem auto;
+        padding: 3rem 0;
+        background-color: v.$negroTransparente;
+
+    }
+
+    .datos{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .empleado-encomiedas{
+        border-bottom: 1px solid v.$negro;
+        padding-left: 2rem;
+    }
+
+    .empleado-encomiedas:last-child{
+        border: none;
+    }
+
+    .mover{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .enlace{
+        margin-right: 40rem;
+    }
+
+    .enlace2{
+        margin-right: 40rem;
+        margin-left: 2rem;
+    }
+
+    .margen{
+        margin-left: 2rem;
+    }
+}
+
